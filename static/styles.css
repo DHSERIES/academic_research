@@ -1,0 +1,56 @@
+/* Overall Chat Container */
+.chat-container {
+    width: 80%; /* Adjust to desired width */
+    max-width: 800px; /* Prevent overly wide container */
+    margin: 20px auto; /* Center the container horizontally */
+    border: 1px solid #ccc; /* Subtle border */
+    padding: 20px; /* Add inner padding */
+    border-radius: 8px; /* Rounded corners */
+    font-family: sans-serif; /* Choose your preferred font */
+}
+
+/* Message Display Area */
+#chat-log {
+    height: 400px; /* Set initial height - can make this dynamic */
+    overflow-y: auto; /* Enable scrolling for long conversations */
+    padding: 10px;
+    background-color: #f7f7f7; /* Light background color */
+}
+
+/* Individual Messages */
+.message {
+    margin-bottom: 10px; /* Space between messages */
+    padding: 8px 12px; /* Inner padding for readability */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* User Messages (Outgoing) */
+.message.user {
+    background-color: #0084ff; /* Your preferred user message color */
+    color: white;
+    text-align: right; /* Align to the right */
+}
+
+/* Bot Messages (Incoming) */
+.message.bot {
+    background-color: #e0e0e0; /* Your preferred bot message color */
+    text-align: left; /* Align to the left */
+}
+
+/* Input Area and Send Button */
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #0084ff; /* Match user message color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate that it's clickable */
+}

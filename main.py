@@ -1,4 +1,3 @@
-
 from openai import OpenAI
 from scraper import scrape_and_save
 client = OpenAI(api_key="your-api-key-here")
